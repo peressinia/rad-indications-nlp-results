@@ -1,0 +1,25 @@
+comparison,metric,value_A,value_B,delta_A_minus_B,perm_count,p_value,p_value_BH,significant_BH
+baseBERT vs radBERT,micro_roc_auc,0.8535,0.8547,-0.0012,16,0.0034,0.0051,True
+baseBERT vs radBERT,macro_roc_auc,0.7631,0.7637,-0.0006,3432,0.6865,0.6865,False
+baseBERT vs radBERT,micro_auprc,0.4701,0.474,-0.0039,4,0.001,0.0016,True
+baseBERT vs radBERT,macro_auprc,0.3143,0.3162,-0.002,957,0.1916,0.2189,False
+baseBERT vs bioClinBERT,micro_roc_auc,0.8535,0.8557,-0.0022,0,0.0002,0.0003,True
+baseBERT vs bioClinBERT,macro_roc_auc,0.7631,0.7655,-0.0023,234,0.047,0.0594,False
+baseBERT vs bioClinBERT,micro_auprc,0.4701,0.4748,-0.0046,0,0.0002,0.0003,True
+baseBERT vs bioClinBERT,macro_auprc,0.3143,0.3178,-0.0035,57,0.0116,0.0155,True
+baseBERT vs BernoulliNB,micro_roc_auc,0.8535,0.8137,0.0398,0,0.0002,0.0003,True
+baseBERT vs BernoulliNB,macro_roc_auc,0.7631,0.7214,0.0418,0,0.0002,0.0003,True
+baseBERT vs BernoulliNB,micro_auprc,0.4701,0.3582,0.1119,0,0.0002,0.0003,True
+baseBERT vs BernoulliNB,macro_auprc,0.3143,0.253,0.0613,0,0.0002,0.0003,True
+radBERT vs bioClinBERT,micro_roc_auc,0.8547,0.8557,-0.001,41,0.0084,0.0119,True
+radBERT vs bioClinBERT,macro_roc_auc,0.7637,0.7655,-0.0017,845,0.1692,0.203,False
+radBERT vs bioClinBERT,micro_auprc,0.474,0.4748,-0.0008,2427,0.4855,0.5066,False
+radBERT vs bioClinBERT,macro_auprc,0.3162,0.3178,-0.0015,1712,0.3425,0.3737,False
+radBERT vs BernoulliNB,micro_roc_auc,0.8547,0.8137,0.041,0,0.0002,0.0003,True
+radBERT vs BernoulliNB,macro_roc_auc,0.7637,0.7214,0.0423,0,0.0002,0.0003,True
+radBERT vs BernoulliNB,micro_auprc,0.474,0.3582,0.1158,0,0.0002,0.0003,True
+radBERT vs BernoulliNB,macro_auprc,0.3162,0.253,0.0633,0,0.0002,0.0003,True
+bioClinBERT vs BernoulliNB,micro_roc_auc,0.8557,0.8137,0.042,0,0.0002,0.0003,True
+bioClinBERT vs BernoulliNB,macro_roc_auc,0.7655,0.7214,0.0441,0,0.0002,0.0003,True
+bioClinBERT vs BernoulliNB,micro_auprc,0.4748,0.3582,0.1165,0,0.0002,0.0003,True
+bioClinBERT vs BernoulliNB,macro_auprc,0.3178,0.253,0.0648,0,0.0002,0.0003,True

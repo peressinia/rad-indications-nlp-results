@@ -1,0 +1,274 @@
+
+════════════════════════════════════════════════════════════
+  LOADING — Binary Task
+════════════════════════════════════════════════════════════
+
+  [binary] Loading baseBERT:
+    Loaded  CNF-v4-0-baseBERT_bt32-ep3-lr0-bl1-tt0_pyV-1-2_y_true_binary.npy  shape=(22644,)  dtype=int64
+    Loaded  CNF-v4-0-baseBERT_bt32-ep3-lr0-bl1-tt0_pyV-1-2_binary_preds.npy  shape=(22644,)  dtype=int64
+    Loaded  CNF-v4-0-baseBERT_bt32-ep3-lr0-bl1-tt0_pyV-1-2_binary_probs.npy  shape=(22644,)  dtype=float32
+
+  [binary] Loading radBERT:
+    Loaded  CNF-v4-0-radBERT_bt32-ep2-lr0-bl1-tt0_pyV-1-2_y_true_binary.npy  shape=(22644,)  dtype=int64
+    Loaded  CNF-v4-0-radBERT_bt32-ep2-lr0-bl1-tt0_pyV-1-2_binary_preds.npy  shape=(22644,)  dtype=int64
+    Loaded  CNF-v4-0-radBERT_bt32-ep2-lr0-bl1-tt0_pyV-1-2_binary_probs.npy  shape=(22644,)  dtype=float32
+
+  [binary] Loading bioClinBERT:
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep1-lr0-bl3-tt0_pyV-1-2_y_true_binary.npy  shape=(22644,)  dtype=int64
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep1-lr0-bl3-tt0_pyV-1-2_binary_preds.npy  shape=(22644,)  dtype=int64
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep1-lr0-bl3-tt0_pyV-1-2_binary_probs.npy  shape=(22644,)  dtype=float32
+
+  [binary] Loading MultinomialNB:
+    Loaded  MultinomialNB-final-1500-NCF-v4-0-bal1_pyV-1-1_y_true_binary.npy  shape=(22644,)  dtype=int64
+    Loaded  MultinomialNB-final-1500-NCF-v4-0-bal1_pyV-1-1_nb_binary_preds.npy  shape=(22644,)  dtype=int64
+    Loaded  MultinomialNB-final-1500-NCF-v4-0-bal1_pyV-1-1_nb_binary_probs.npy  shape=(22644, 2)  dtype=float64
+    -> y_prob shape (n,2): taking column 1 (positive class)
+
+════════════════════════════════════════════════════════════
+  LOADING — Multi-Label Task
+════════════════════════════════════════════════════════════
+
+  [multilabel] Loading baseBERT:
+    Loaded  CNF-v4-0-baseBERT_bt32-ep6-lr0-bl0-tt0_pyV-1-1_y_true_multilabel.npy  shape=(22644, 13)  dtype=int64
+    Loaded  CNF-v4-0-baseBERT_bt32-ep6-lr0-bl0-tt0_pyV-1-1_multilabel_preds.npy  shape=(22644, 13)  dtype=int64
+    Loaded  CNF-v4-0-baseBERT_bt32-ep6-lr0-bl0-tt0_pyV-1-1_multilabel_probs.npy  shape=(22644, 13)  dtype=float32
+    -> y_prob final shape: (22644, 13)
+
+  [multilabel] Loading radBERT:
+    Loaded  CNF-v4-0-radBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_y_true_multilabel.npy  shape=(22644, 13)  dtype=int64
+    Loaded  CNF-v4-0-radBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_multilabel_preds.npy  shape=(22644, 13)  dtype=int64
+    Loaded  CNF-v4-0-radBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_multilabel_probs.npy  shape=(22644, 13)  dtype=float32
+    -> y_prob final shape: (22644, 13)
+
+  [multilabel] Loading bioClinBERT:
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_y_true_multilabel.npy  shape=(22644, 13)  dtype=int64
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_multilabel_preds.npy  shape=(22644, 13)  dtype=int64
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_multilabel_probs.npy  shape=(22644, 13)  dtype=float32
+    -> y_prob final shape: (22644, 13)
+
+  [multilabel] Loading BernoulliNB:
+    Loaded  BernoulliNB-TFIDF-xSplits-1500-NCF-v4-0-bal0_y_true_multilabel.npy  shape=(22644, 13)  dtype=int64
+    Loaded  BernoulliNB-TFIDF-xSplits-1500-NCF-v4-0-bal0_nb_multilabel_preds.npy  shape=(22644, 13)  dtype=int64
+    Loaded  BernoulliNB-TFIDF-xSplits-1500-NCF-v4-0-bal0_nb_multilabel_probs.npy  shape=(13, 22644)  dtype=float64
+    -> y_prob shape (13, 22644) is TRANSPOSED — fixing with .T
+    -> y_prob final shape: (22644, 13)
+
+════════════════════════════════════════════════════════════
+  SANITY CHECK — y_true Consistency
+════════════════════════════════════════════════════════════
+
+────────────────────────────────────────────────────────────
+  SANITY CHECK — y_true consistency [binary]
+────────────────────────────────────────────────────────────
+  Reference model: baseBERT  shape=(22644,)
+  ✓ radBERT: 0 differences (0.00% of 22,644 elements)
+  ✓ bioClinBERT: 0 differences (0.00% of 22,644 elements)
+  ✓ MultinomialNB: 0 differences (0.00% of 22,644 elements)
+
+  ✓ All y_true arrays are IDENTICAL — row-by-row tests are valid.
+
+────────────────────────────────────────────────────────────
+  SANITY CHECK — y_true consistency [multilabel]
+────────────────────────────────────────────────────────────
+  Reference model: baseBERT  shape=(22644, 13)
+  ✓ radBERT: 0 differences (0.00% of 294,372 elements)
+  ✓ bioClinBERT: 0 differences (0.00% of 294,372 elements)
+  ✓ BernoulliNB: 0 differences (0.00% of 294,372 elements)
+
+  ✓ All y_true arrays are IDENTICAL — row-by-row tests are valid.
+
+════════════════════════════════════════════════════════════
+  EXPORTING CSVs
+════════════════════════════════════════════════════════════
+  Saved: binary_baseBERT_predictions.csv
+  Saved: binary_radBERT_predictions.csv
+  Saved: binary_bioClinBERT_predictions.csv
+  Saved: binary_MultinomialNB_predictions.csv
+  Saved: multilabel_baseBERT_y_true/pred/prob.csv
+  Saved: multilabel_radBERT_y_true/pred/prob.csv
+  Saved: multilabel_bioClinBERT_y_true/pred/prob.csv
+  Saved: multilabel_BernoulliNB_y_true/pred/prob.csv
+
+════════════════════════════════════════════════════════════
+  BINARY — McNemar's Tests
+════════════════════════════════════════════════════════════
+    baseBERT vs radBERT:  b=842  c=735  stat=7.1249  p=0.0076  *
+    baseBERT vs bioClinBERT:  b=866  c=680  stat=22.1378  p=0.0000  *
+    baseBERT vs MultinomialNB:  b=1852  c=1184  stat=146.5379  p=0.0000  *
+    radBERT vs bioClinBERT:  b=796  c=717  stat=4.0212  p=0.0449  *
+    radBERT vs MultinomialNB:  b=1749  c=1188  stat=106.7756  p=0.0000  *
+    bioClinBERT vs MultinomialNB:  b=1702  c=1220  stat=79.1790  p=0.0000  *
+
+  Saved: binary_mcnemar_results.csv
+
+════════════════════════════════════════════════════════════
+  BINARY — Bootstrap Confidence Intervals
+════════════════════════════════════════════════════════════
+
+  baseBERT:
+
+  radBERT:
+
+  bioClinBERT:
+
+  MultinomialNB:
+
+  Saved: binary_bootstrap_ci.csv
+
+════════════════════════════════════════════════════════════
+  MULTI-LABEL — Bootstrap Confidence Intervals
+════════════════════════════════════════════════════════════
+
+  baseBERT:
+
+  radBERT:
+
+  bioClinBERT:
+
+  BernoulliNB:
+
+  Saved: multilabel_bootstrap_ci.csv
+
+════════════════════════════════════════════════════════════
+  MULTI-LABEL — Paired Permutation Tests
+════════════════════════════════════════════════════════════
+    ✓ baseBERT vs radBERT  [micro_f1]:  Δ=-0.0273  p=0.0000
+    ✓ baseBERT vs radBERT  [macro_f1]:  Δ=-0.0213  p=0.0000
+    ✓ baseBERT vs radBERT  [weighted_f1]:  Δ=-0.0239  p=0.0000
+    ✓ baseBERT vs radBERT  [hamming_loss]:  Δ=+0.0011  p=0.0002
+    ✓ baseBERT vs bioClinBERT  [micro_f1]:  Δ=-0.0058  p=0.0006
+    ✓ baseBERT vs bioClinBERT  [macro_f1]:  Δ=+0.0086  p=0.0000
+    ✗ baseBERT vs bioClinBERT  [weighted_f1]:  Δ=+0.0012  p=0.4850
+    ✗ baseBERT vs bioClinBERT  [hamming_loss]:  Δ=-0.0004  p=0.1104
+    ✓ baseBERT vs BernoulliNB  [micro_f1]:  Δ=-0.0377  p=0.0000
+    ✓ baseBERT vs BernoulliNB  [macro_f1]:  Δ=-0.0665  p=0.0000
+    ✓ baseBERT vs BernoulliNB  [weighted_f1]:  Δ=-0.0650  p=0.0000
+    ✓ baseBERT vs BernoulliNB  [hamming_loss]:  Δ=+0.0338  p=0.0000
+    ✓ radBERT vs bioClinBERT  [micro_f1]:  Δ=+0.0215  p=0.0000
+    ✓ radBERT vs bioClinBERT  [macro_f1]:  Δ=+0.0299  p=0.0000
+    ✓ radBERT vs bioClinBERT  [weighted_f1]:  Δ=+0.0250  p=0.0000
+    ✓ radBERT vs bioClinBERT  [hamming_loss]:  Δ=-0.0015  p=0.0000
+    ✓ radBERT vs BernoulliNB  [micro_f1]:  Δ=-0.0103  p=0.0002
+    ✓ radBERT vs BernoulliNB  [macro_f1]:  Δ=-0.0452  p=0.0000
+    ✓ radBERT vs BernoulliNB  [weighted_f1]:  Δ=-0.0412  p=0.0000
+    ✓ radBERT vs BernoulliNB  [hamming_loss]:  Δ=+0.0328  p=0.0000
+    ✓ bioClinBERT vs BernoulliNB  [micro_f1]:  Δ=-0.0318  p=0.0000
+    ✓ bioClinBERT vs BernoulliNB  [macro_f1]:  Δ=-0.0751  p=0.0000
+    ✓ bioClinBERT vs BernoulliNB  [weighted_f1]:  Δ=-0.0662  p=0.0000
+    ✓ bioClinBERT vs BernoulliNB  [hamming_loss]:  Δ=+0.0343  p=0.0000
+
+  Saved: multilabel_permutation_results.csv
+
+════════════════════════════════════════════════════════════
+  SUMMARY — Binary Bootstrap CIs
+════════════════════════════════════════════════════════════
+        model             metric  value            ci_95
+MultinomialNB            roc_auc 0.7633 [0.7566, 0.7695]
+MultinomialNB              auprc 0.8551 [0.8488, 0.8612]
+MultinomialNB                 f1 0.7369 [0.7313, 0.7425]
+MultinomialNB           accuracy 0.6884 [0.6820, 0.6941]
+MultinomialNB          precision 0.8387 [0.8317, 0.8457]
+MultinomialNB recall_sensitivity 0.6572 [0.6494, 0.6648]
+MultinomialNB        specificity 0.7500 [0.7401, 0.7593]
+     baseBERT            roc_auc 0.7934 [0.7873, 0.7995]
+     baseBERT              auprc 0.8809 [0.8757, 0.8858]
+     baseBERT                 f1 0.7662 [0.7606, 0.7716]
+     baseBERT           accuracy 0.7179 [0.7116, 0.7237]
+     baseBERT          precision 0.8519 [0.8454, 0.8582]
+     baseBERT recall_sensitivity 0.6962 [0.6885, 0.7035]
+     baseBERT        specificity 0.7607 [0.7511, 0.7702]
+  bioClinBERT            roc_auc 0.7934 [0.7874, 0.7992]
+  bioClinBERT              auprc 0.8810 [0.8760, 0.8861]
+  bioClinBERT                 f1 0.7553 [0.7497, 0.7609]
+  bioClinBERT           accuracy 0.7096 [0.7039, 0.7156]
+  bioClinBERT          precision 0.8576 [0.8516, 0.8640]
+  bioClinBERT recall_sensitivity 0.6748 [0.6673, 0.6825]
+  bioClinBERT        specificity 0.7784 [0.7695, 0.7879]
+      radBERT            roc_auc 0.7980 [0.7921, 0.8038]
+      radBERT              auprc 0.8848 [0.8797, 0.8900]
+      radBERT                 f1 0.7598 [0.7544, 0.7652]
+      radBERT           accuracy 0.7131 [0.7074, 0.7190]
+      radBERT          precision 0.8557 [0.8497, 0.8619]
+      radBERT recall_sensitivity 0.6833 [0.6760, 0.6905]
+      radBERT        specificity 0.7721 [0.7633, 0.7819]
+
+════════════════════════════════════════════════════════════
+  SUMMARY — Multi-Label Aggregate Bootstrap CIs
+════════════════════════════════════════════════════════════
+      model          metric  value            ci_95
+BernoulliNB        micro_f1 0.3986 [0.3934, 0.4036]
+BernoulliNB        macro_f1 0.2807 [0.2750, 0.2867]
+BernoulliNB     weighted_f1 0.3853 [0.3797, 0.3905]
+BernoulliNB    hamming_loss 0.1464 [0.1448, 0.1480]
+BernoulliNB subset_accuracy 0.2510 [0.2451, 0.2567]
+BernoulliNB   micro_roc_auc 0.8137 [0.8112, 0.8165]
+BernoulliNB   macro_roc_auc 0.7214 [0.7165, 0.7265]
+BernoulliNB     micro_auprc 0.3582 [0.3535, 0.3637]
+BernoulliNB     macro_auprc 0.2530 [0.2486, 0.2588]
+   baseBERT        micro_f1 0.3609 [0.3550, 0.3667]
+   baseBERT        macro_f1 0.2142 [0.2087, 0.2197]
+   baseBERT     weighted_f1 0.3203 [0.3149, 0.3258]
+   baseBERT    hamming_loss 0.1126 [0.1113, 0.1138]
+   baseBERT subset_accuracy 0.2499 [0.2441, 0.2556]
+   baseBERT   micro_roc_auc 0.8535 [0.8511, 0.8558]
+   baseBERT   macro_roc_auc 0.7631 [0.7582, 0.7677]
+   baseBERT     micro_auprc 0.4701 [0.4642, 0.4762]
+   baseBERT     macro_auprc 0.3143 [0.3089, 0.3214]
+bioClinBERT        micro_f1 0.3668 [0.3611, 0.3724]
+bioClinBERT        macro_f1 0.2056 [0.1998, 0.2109]
+bioClinBERT     weighted_f1 0.3191 [0.3138, 0.3246]
+bioClinBERT    hamming_loss 0.1122 [0.1110, 0.1134]
+bioClinBERT subset_accuracy 0.2600 [0.2545, 0.2660]
+bioClinBERT   micro_roc_auc 0.8557 [0.8533, 0.8581]
+bioClinBERT   macro_roc_auc 0.7655 [0.7605, 0.7703]
+bioClinBERT     micro_auprc 0.4748 [0.4690, 0.4807]
+bioClinBERT     macro_auprc 0.3178 [0.3124, 0.3251]
+    radBERT        micro_f1 0.3883 [0.3828, 0.3938]
+    radBERT        macro_f1 0.2355 [0.2292, 0.2416]
+    radBERT     weighted_f1 0.3442 [0.3388, 0.3497]
+    radBERT    hamming_loss 0.1137 [0.1125, 0.1149]
+    radBERT subset_accuracy 0.2676 [0.2621, 0.2733]
+    radBERT   micro_roc_auc 0.8547 [0.8524, 0.8571]
+    radBERT   macro_roc_auc 0.7637 [0.7589, 0.7684]
+    radBERT     micro_auprc 0.4740 [0.4684, 0.4797]
+    radBERT     macro_auprc 0.3162 [0.3113, 0.3233]
+
+════════════════════════════════════════════════════════════
+  SUMMARY — McNemar + Permutation Tests
+════════════════════════════════════════════════════════════
+                  comparison  statistic  p_value  p_value_BH  significant_BH
+         baseBERT vs radBERT     7.1249   0.0076      0.0091            True
+     baseBERT vs bioClinBERT    22.1378   0.0000      0.0000            True
+   baseBERT vs MultinomialNB   146.5379   0.0000      0.0000            True
+      radBERT vs bioClinBERT     4.0212   0.0449      0.0449            True
+    radBERT vs MultinomialNB   106.7756   0.0000      0.0000            True
+bioClinBERT vs MultinomialNB    79.1790   0.0000      0.0000            True
+
+                comparison       metric  delta_A_minus_B  p_value  p_value_BH  significant_BH
+       baseBERT vs radBERT     micro_f1          -0.0273   0.0000      0.0000            True
+       baseBERT vs radBERT     macro_f1          -0.0213   0.0000      0.0000            True
+       baseBERT vs radBERT  weighted_f1          -0.0239   0.0000      0.0000            True
+       baseBERT vs radBERT hamming_loss           0.0011   0.0002      0.0002            True
+   baseBERT vs bioClinBERT     micro_f1          -0.0058   0.0006      0.0007            True
+   baseBERT vs bioClinBERT     macro_f1           0.0086   0.0000      0.0000            True
+   baseBERT vs bioClinBERT  weighted_f1           0.0012   0.4850      0.4850           False
+   baseBERT vs bioClinBERT hamming_loss          -0.0004   0.1104      0.1152           False
+   baseBERT vs BernoulliNB     micro_f1          -0.0377   0.0000      0.0000            True
+   baseBERT vs BernoulliNB     macro_f1          -0.0665   0.0000      0.0000            True
+   baseBERT vs BernoulliNB  weighted_f1          -0.0650   0.0000      0.0000            True
+   baseBERT vs BernoulliNB hamming_loss           0.0338   0.0000      0.0000            True
+    radBERT vs bioClinBERT     micro_f1           0.0215   0.0000      0.0000            True
+    radBERT vs bioClinBERT     macro_f1           0.0299   0.0000      0.0000            True
+    radBERT vs bioClinBERT  weighted_f1           0.0250   0.0000      0.0000            True
+    radBERT vs bioClinBERT hamming_loss          -0.0015   0.0000      0.0000            True
+    radBERT vs BernoulliNB     micro_f1          -0.0103   0.0002      0.0002            True
+    radBERT vs BernoulliNB     macro_f1          -0.0452   0.0000      0.0000            True
+    radBERT vs BernoulliNB  weighted_f1          -0.0412   0.0000      0.0000            True
+    radBERT vs BernoulliNB hamming_loss           0.0328   0.0000      0.0000            True
+bioClinBERT vs BernoulliNB     micro_f1          -0.0318   0.0000      0.0000            True
+bioClinBERT vs BernoulliNB     macro_f1          -0.0751   0.0000      0.0000            True
+bioClinBERT vs BernoulliNB  weighted_f1          -0.0662   0.0000      0.0000            True
+bioClinBERT vs BernoulliNB hamming_loss           0.0343   0.0000      0.0000            True
+
+
+All results saved to: ./results_model_comparison/

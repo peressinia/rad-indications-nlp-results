@@ -1,0 +1,133 @@
+Threshold Analysis — X-ray Triage Application
+PREDS_DIR   : ./data_numpy
+RESULTS_DIR : ./results_threshold
+Annual vol  : 100,000
+Target prec : ['85%', '90%', '93%', '95%', '97%', '99%']
+
+Loading binary predictions...
+  Loaded binary  baseBERT: n=22,644  prevalence=0.664
+  Loaded binary  radBERT: n=22,644  prevalence=0.664
+  Loaded binary  bioClinBERT: n=22,644  prevalence=0.664
+  Loaded binary  MultinomialNB: n=22,644  prevalence=0.664
+
+Loading multilabel predictions...
+  Loaded multilabel baseBERT: shape=(22644, 13)
+  Loaded multilabel radBERT: shape=(22644, 13)
+  Loaded multilabel bioClinBERT: shape=(22644, 13)
+  Loaded multilabel BernoulliNB: shape=(22644, 13)
+
+════════════════════════════════════════════════════════════
+  BINARY — Precision-Recall Threshold Analysis
+════════════════════════════════════════════════════════════
+
+  Test set n=22,644  |  prevalence=0.664  |  true positives=15,039
+  Annual volume=100,000  |  scale factor=4.42x
+
+  baseBERT  (AUPRC=0.8809  AUROC=0.7934)
+   Target prec  Threshold   Recall   TP captured    FP cost   Ann. xrays saved
+  ---------------------------------------------------------------------------
+           85%     0.4950    0.700     10,525 (70.0%)   1,851 FP       46,480 saved
+           90%     0.7224    0.523      7,861 (52.3%)     873 FP       34,716 saved
+           93%     0.8377    0.351      5,284 (35.1%)     397 FP       23,335 saved
+           95%     0.9090    0.203      3,049 (20.3%)     160 FP       13,465 saved
+           97%     0.9567    0.082      1,240 (8.2%)      38 FP        5,476 saved
+           99%     0.9688    0.042        631 (4.2%)       6 FP        2,787 saved
+
+  radBERT  (AUPRC=0.8848  AUROC=0.7980)
+   Target prec  Threshold   Recall   TP captured    FP cost   Ann. xrays saved
+  ---------------------------------------------------------------------------
+           85%     0.4833    0.698     10,492 (69.8%)   1,851 FP       46,335 saved
+           90%     0.6835    0.550      8,278 (55.0%)     919 FP       36,557 saved
+           93%     0.8231    0.362      5,443 (36.2%)     409 FP       24,037 saved
+           95%     0.8695    0.264      3,973 (26.4%)     209 FP       17,545 saved
+           97%     0.9296    0.131      1,968 (13.1%)      60 FP        8,691 saved
+           99%     0.9640    0.021        317 (2.1%)       3 FP        1,400 saved
+
+  bioClinBERT  (AUPRC=0.8810  AUROC=0.7934)
+   Target prec  Threshold   Recall   TP captured    FP cost   Ann. xrays saved
+  ---------------------------------------------------------------------------
+           85%     0.4764    0.691     10,396 (69.1%)   1,822 FP       45,911 saved
+           90%     0.6933    0.532      7,998 (53.2%)     888 FP       35,321 saved
+           93%     0.8386    0.336      5,052 (33.6%)     380 FP       22,311 saved
+           95%     0.8876    0.232      3,483 (23.2%)     183 FP       15,382 saved
+           97%     0.9325    0.115      1,723 (11.5%)      53 FP        7,609 saved
+           99%     0.9657    0.002         37 (0.2%)       0 FP          163 saved
+
+  MultinomialNB  (AUPRC=0.8551  AUROC=0.7633)
+   Target prec  Threshold   Recall   TP captured    FP cost   Ann. xrays saved
+  ---------------------------------------------------------------------------
+           85%     0.5323    0.631      9,487 (63.1%)   1,674 FP       41,896 saved
+           90%     0.7212    0.421      6,337 (42.1%)     704 FP       27,985 saved
+           93%     0.9179    0.079      1,183 (7.9%)      89 FP        5,224 saved
+           95%     0.9862    0.000          1 (0.0%)       0 FP            4 saved
+           97%     0.9862    0.000          1 (0.0%)       0 FP            4 saved
+           99%     0.9862    0.000          1 (0.0%)       0 FP            4 saved
+
+  Saved: binary_pr_curves.csv
+  Saved: binary_operating_points.csv
+  Saved: binary_xray_savings.csv
+
+════════════════════════════════════════════════════════════
+  MULTI-LABEL — Per-Label Threshold Analysis
+════════════════════════════════════════════════════════════
+
+  baseBERT
+
+  radBERT
+
+  bioClinBERT
+
+  BernoulliNB
+
+  Label                           Prev   BERT recall@90%   BERT recall@95%   NB recall@90%   NB recall@95%
+  ----------------------------------------------------------------------------------------------------
+  Atelectasis                    0.198             0.000             0.000           0.000           0.000
+  Cardiomegaly                   0.198             0.001             0.001           0.000           0.000
+  Consolidation                  0.051             0.003             0.003           0.001           0.001
+  Edema                          0.125               n/a               n/a           0.000           0.000
+  Enlarged Cardiomediastinum     0.031               n/a               n/a           0.000           0.000
+  Fracture                       0.021             0.006             0.006           0.000           0.000
+  Lung Lesion                    0.026             0.005             0.005           0.000           0.000
+  Lung Opacity                   0.231             0.000             0.000           0.000           0.000
+  No Finding                     0.336             0.002             0.002           0.002           0.000
+  Pleural Effusion               0.248             0.029             0.003           0.000           0.000
+  Pleural Other                  0.010             0.005             0.005           0.000           0.000
+  Pneumonia                      0.074               n/a               n/a           0.000           0.000
+  Pneumothorax                   0.041             0.001             0.001           0.002           0.002
+
+  Saved: multilabel_pr_curves.csv
+  Saved: multilabel_operating_points.csv
+
+Generating plots...
+
+  Plot saved: ./diagnostic_figures/threshold_analysis.png
+
+══════════════════════════════════════════════════════════════════════
+  POLICY SUMMARY — Binary Task
+══════════════════════════════════════════════════════════════════════
+
+  Model: radBERT  (highest binary AUROC = 0.798)
+
+   Precision   Recall   X-rays saved/yr            FP escalations/yr
+  --------------------------------------------------------------------
+         85%    0.698          46,335                  8,174
+         90%    0.550          36,557                  4,058
+         93%    0.362          24,037                  1,806
+         95%    0.264          17,545                    923
+         97%    0.131           8,691                    265
+         99%    0.021           1,400                     13
+
+══════════════════════════════════════════════════════════════════════
+  POLICY SUMMARY — Multi-Label Task
+  Labels where 90% precision is achievable with recall > 0.10
+  (i.e., the model can reliably identify this finding type)
+══════════════════════════════════════════════════════════════════════
+
+
+All outputs saved to: ./results_threshold/
+Files:
+  binary_operating_points.csv                      1,856 bytes
+  binary_pr_curves.csv                          2,989,563 bytes
+  binary_xray_savings.csv                            784 bytes
+  multilabel_operating_points.csv                 20,438 bytes
+  multilabel_pr_curves.csv                      44,538,421 bytes

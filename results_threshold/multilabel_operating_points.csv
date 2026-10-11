@@ -1,0 +1,313 @@
+model,label,prevalence,auprc,target_precision,achievable,threshold,actual_precision,recall,annual_cases_captured
+baseBERT,Atelectasis,0.1982,0.3706,0.85,True,0.7659,1.0,0.0,0
+baseBERT,Atelectasis,0.1982,0.3706,0.9,True,0.7659,1.0,0.0,0
+baseBERT,Atelectasis,0.1982,0.3706,0.93,True,0.7659,1.0,0.0,0
+baseBERT,Atelectasis,0.1982,0.3706,0.95,True,0.7659,1.0,0.0,0
+baseBERT,Atelectasis,0.1982,0.3706,0.97,True,0.7659,1.0,0.0,0
+baseBERT,Atelectasis,0.1982,0.3706,0.99,True,0.7659,1.0,0.0,0
+baseBERT,Cardiomegaly,0.198,0.4551,0.85,True,0.876,1.0,0.0,0
+baseBERT,Cardiomegaly,0.198,0.4551,0.9,True,0.876,1.0,0.0,0
+baseBERT,Cardiomegaly,0.198,0.4551,0.93,True,0.876,1.0,0.0,0
+baseBERT,Cardiomegaly,0.198,0.4551,0.95,True,0.876,1.0,0.0,0
+baseBERT,Cardiomegaly,0.198,0.4551,0.97,True,0.876,1.0,0.0,0
+baseBERT,Cardiomegaly,0.198,0.4551,0.99,True,0.876,1.0,0.0,0
+baseBERT,Consolidation,0.0515,0.1593,0.85,True,0.667,1.0,0.0,0
+baseBERT,Consolidation,0.0515,0.1593,0.9,True,0.667,1.0,0.0,0
+baseBERT,Consolidation,0.0515,0.1593,0.93,True,0.667,1.0,0.0,0
+baseBERT,Consolidation,0.0515,0.1593,0.95,True,0.667,1.0,0.0,0
+baseBERT,Consolidation,0.0515,0.1593,0.97,True,0.667,1.0,0.0,0
+baseBERT,Consolidation,0.0515,0.1593,0.99,True,0.667,1.0,0.0,0
+baseBERT,Edema,0.1248,0.3143,0.85,True,0.7714,1.0,0.0,0
+baseBERT,Edema,0.1248,0.3143,0.9,True,0.7714,1.0,0.0,0
+baseBERT,Edema,0.1248,0.3143,0.93,True,0.7714,1.0,0.0,0
+baseBERT,Edema,0.1248,0.3143,0.95,True,0.7714,1.0,0.0,0
+baseBERT,Edema,0.1248,0.3143,0.97,True,0.7714,1.0,0.0,0
+baseBERT,Edema,0.1248,0.3143,0.99,True,0.7714,1.0,0.0,0
+baseBERT,Enlarged Cardiomediastinum,0.031,0.1084,0.85,True,0.6821,1.0,0.0,0
+baseBERT,Enlarged Cardiomediastinum,0.031,0.1084,0.9,True,0.6821,1.0,0.0,0
+baseBERT,Enlarged Cardiomediastinum,0.031,0.1084,0.93,True,0.6821,1.0,0.0,0
+baseBERT,Enlarged Cardiomediastinum,0.031,0.1084,0.95,True,0.6821,1.0,0.0,0
+baseBERT,Enlarged Cardiomediastinum,0.031,0.1084,0.97,True,0.6821,1.0,0.0,0
+baseBERT,Enlarged Cardiomediastinum,0.031,0.1084,0.99,True,0.6821,1.0,0.0,0
+baseBERT,Fracture,0.0207,0.2588,0.85,True,0.7768,1.0,0.0064,13
+baseBERT,Fracture,0.0207,0.2588,0.9,True,0.7768,1.0,0.0064,13
+baseBERT,Fracture,0.0207,0.2588,0.93,True,0.7768,1.0,0.0064,13
+baseBERT,Fracture,0.0207,0.2588,0.95,True,0.7768,1.0,0.0064,13
+baseBERT,Fracture,0.0207,0.2588,0.97,True,0.7768,1.0,0.0064,13
+baseBERT,Fracture,0.0207,0.2588,0.99,True,0.7768,1.0,0.0064,13
+baseBERT,Lung Lesion,0.0258,0.1283,0.85,True,0.7392,1.0,0.0,0
+baseBERT,Lung Lesion,0.0258,0.1283,0.9,True,0.7392,1.0,0.0,0
+baseBERT,Lung Lesion,0.0258,0.1283,0.93,True,0.7392,1.0,0.0,0
+baseBERT,Lung Lesion,0.0258,0.1283,0.95,True,0.7392,1.0,0.0,0
+baseBERT,Lung Lesion,0.0258,0.1283,0.97,True,0.7392,1.0,0.0,0
+baseBERT,Lung Lesion,0.0258,0.1283,0.99,True,0.7392,1.0,0.0,0
+baseBERT,Lung Opacity,0.2313,0.3888,0.85,True,0.8058,1.0,0.0,0
+baseBERT,Lung Opacity,0.2313,0.3888,0.9,True,0.8058,1.0,0.0,0
+baseBERT,Lung Opacity,0.2313,0.3888,0.93,True,0.8058,1.0,0.0,0
+baseBERT,Lung Opacity,0.2313,0.3888,0.95,True,0.8058,1.0,0.0,0
+baseBERT,Lung Opacity,0.2313,0.3888,0.97,True,0.8058,1.0,0.0,0
+baseBERT,Lung Opacity,0.2313,0.3888,0.99,True,0.8058,1.0,0.0,0
+baseBERT,No Finding,0.3359,0.6337,0.85,True,0.891,1.0,0.0,0
+baseBERT,No Finding,0.3359,0.6337,0.9,True,0.891,1.0,0.0,0
+baseBERT,No Finding,0.3359,0.6337,0.93,True,0.891,1.0,0.0,0
+baseBERT,No Finding,0.3359,0.6337,0.95,True,0.891,1.0,0.0,0
+baseBERT,No Finding,0.3359,0.6337,0.97,True,0.891,1.0,0.0,0
+baseBERT,No Finding,0.3359,0.6337,0.99,True,0.891,1.0,0.0,0
+baseBERT,Pleural Effusion,0.2482,0.5824,0.85,True,0.8096,0.8508,0.0751,1864
+baseBERT,Pleural Effusion,0.2482,0.5824,0.9,True,0.8818,0.902,0.0164,406
+baseBERT,Pleural Effusion,0.2482,0.5824,0.93,True,0.9267,1.0,0.0005,13
+baseBERT,Pleural Effusion,0.2482,0.5824,0.95,True,0.9267,1.0,0.0005,13
+baseBERT,Pleural Effusion,0.2482,0.5824,0.97,True,0.9267,1.0,0.0005,13
+baseBERT,Pleural Effusion,0.2482,0.5824,0.99,True,0.9267,1.0,0.0005,13
+baseBERT,Pleural Other,0.0096,0.0406,0.85,True,0.2453,1.0,0.0,0
+baseBERT,Pleural Other,0.0096,0.0406,0.9,True,0.2453,1.0,0.0,0
+baseBERT,Pleural Other,0.0096,0.0406,0.93,True,0.2453,1.0,0.0,0
+baseBERT,Pleural Other,0.0096,0.0406,0.95,True,0.2453,1.0,0.0,0
+baseBERT,Pleural Other,0.0096,0.0406,0.97,True,0.2453,1.0,0.0,0
+baseBERT,Pleural Other,0.0096,0.0406,0.99,True,0.2453,1.0,0.0,0
+baseBERT,Pneumonia,0.0738,0.1742,0.85,True,0.5502,1.0,0.0,0
+baseBERT,Pneumonia,0.0738,0.1742,0.9,True,0.5502,1.0,0.0,0
+baseBERT,Pneumonia,0.0738,0.1742,0.93,True,0.5502,1.0,0.0,0
+baseBERT,Pneumonia,0.0738,0.1742,0.95,True,0.5502,1.0,0.0,0
+baseBERT,Pneumonia,0.0738,0.1742,0.97,True,0.5502,1.0,0.0,0
+baseBERT,Pneumonia,0.0738,0.1742,0.99,True,0.5502,1.0,0.0,0
+baseBERT,Pneumothorax,0.0409,0.4711,0.85,True,0.8935,1.0,0.0,0
+baseBERT,Pneumothorax,0.0409,0.4711,0.9,True,0.8935,1.0,0.0,0
+baseBERT,Pneumothorax,0.0409,0.4711,0.93,True,0.8935,1.0,0.0,0
+baseBERT,Pneumothorax,0.0409,0.4711,0.95,True,0.8935,1.0,0.0,0
+baseBERT,Pneumothorax,0.0409,0.4711,0.97,True,0.8935,1.0,0.0,0
+baseBERT,Pneumothorax,0.0409,0.4711,0.99,True,0.8935,1.0,0.0,0
+radBERT,Atelectasis,0.1982,0.3697,0.85,True,0.7395,1.0,0.0,0
+radBERT,Atelectasis,0.1982,0.3697,0.9,True,0.7395,1.0,0.0,0
+radBERT,Atelectasis,0.1982,0.3697,0.93,True,0.7395,1.0,0.0,0
+radBERT,Atelectasis,0.1982,0.3697,0.95,True,0.7395,1.0,0.0,0
+radBERT,Atelectasis,0.1982,0.3697,0.97,True,0.7395,1.0,0.0,0
+radBERT,Atelectasis,0.1982,0.3697,0.99,True,0.7395,1.0,0.0,0
+radBERT,Cardiomegaly,0.198,0.4613,0.85,True,0.8499,1.0,0.0007,13
+radBERT,Cardiomegaly,0.198,0.4613,0.9,True,0.8499,1.0,0.0007,13
+radBERT,Cardiomegaly,0.198,0.4613,0.93,True,0.8499,1.0,0.0007,13
+radBERT,Cardiomegaly,0.198,0.4613,0.95,True,0.8499,1.0,0.0007,13
+radBERT,Cardiomegaly,0.198,0.4613,0.97,True,0.8499,1.0,0.0007,13
+radBERT,Cardiomegaly,0.198,0.4613,0.99,True,0.8499,1.0,0.0007,13
+radBERT,Consolidation,0.0515,0.1694,0.85,True,0.5188,1.0,0.0034,18
+radBERT,Consolidation,0.0515,0.1694,0.9,True,0.5188,1.0,0.0034,18
+radBERT,Consolidation,0.0515,0.1694,0.93,True,0.5188,1.0,0.0034,18
+radBERT,Consolidation,0.0515,0.1694,0.95,True,0.5188,1.0,0.0034,18
+radBERT,Consolidation,0.0515,0.1694,0.97,True,0.5188,1.0,0.0034,18
+radBERT,Consolidation,0.0515,0.1694,0.99,True,0.5188,1.0,0.0034,18
+radBERT,Edema,0.1248,0.3162,0.85,True,0.7626,1.0,0.0,0
+radBERT,Edema,0.1248,0.3162,0.9,True,0.7626,1.0,0.0,0
+radBERT,Edema,0.1248,0.3162,0.93,True,0.7626,1.0,0.0,0
+radBERT,Edema,0.1248,0.3162,0.95,True,0.7626,1.0,0.0,0
+radBERT,Edema,0.1248,0.3162,0.97,True,0.7626,1.0,0.0,0
+radBERT,Edema,0.1248,0.3162,0.99,True,0.7626,1.0,0.0,0
+radBERT,Enlarged Cardiomediastinum,0.031,0.1033,0.85,True,0.6389,1.0,0.0,0
+radBERT,Enlarged Cardiomediastinum,0.031,0.1033,0.9,True,0.6389,1.0,0.0,0
+radBERT,Enlarged Cardiomediastinum,0.031,0.1033,0.93,True,0.6389,1.0,0.0,0
+radBERT,Enlarged Cardiomediastinum,0.031,0.1033,0.95,True,0.6389,1.0,0.0,0
+radBERT,Enlarged Cardiomediastinum,0.031,0.1033,0.97,True,0.6389,1.0,0.0,0
+radBERT,Enlarged Cardiomediastinum,0.031,0.1033,0.99,True,0.6389,1.0,0.0,0
+radBERT,Fracture,0.0207,0.2512,0.85,True,0.8329,1.0,0.0,0
+radBERT,Fracture,0.0207,0.2512,0.9,True,0.8329,1.0,0.0,0
+radBERT,Fracture,0.0207,0.2512,0.93,True,0.8329,1.0,0.0,0
+radBERT,Fracture,0.0207,0.2512,0.95,True,0.8329,1.0,0.0,0
+radBERT,Fracture,0.0207,0.2512,0.97,True,0.8329,1.0,0.0,0
+radBERT,Fracture,0.0207,0.2512,0.99,True,0.8329,1.0,0.0,0
+radBERT,Lung Lesion,0.0258,0.1349,0.85,True,0.7183,1.0,0.0017,4
+radBERT,Lung Lesion,0.0258,0.1349,0.9,True,0.7183,1.0,0.0017,4
+radBERT,Lung Lesion,0.0258,0.1349,0.93,True,0.7183,1.0,0.0017,4
+radBERT,Lung Lesion,0.0258,0.1349,0.95,True,0.7183,1.0,0.0017,4
+radBERT,Lung Lesion,0.0258,0.1349,0.97,True,0.7183,1.0,0.0017,4
+radBERT,Lung Lesion,0.0258,0.1349,0.99,True,0.7183,1.0,0.0017,4
+radBERT,Lung Opacity,0.2313,0.3914,0.85,True,0.7871,1.0,0.0004,9
+radBERT,Lung Opacity,0.2313,0.3914,0.9,True,0.7871,1.0,0.0004,9
+radBERT,Lung Opacity,0.2313,0.3914,0.93,True,0.7871,1.0,0.0004,9
+radBERT,Lung Opacity,0.2313,0.3914,0.95,True,0.7871,1.0,0.0004,9
+radBERT,Lung Opacity,0.2313,0.3914,0.97,True,0.7871,1.0,0.0004,9
+radBERT,Lung Opacity,0.2313,0.3914,0.99,True,0.7871,1.0,0.0004,9
+radBERT,No Finding,0.3359,0.6401,0.85,True,0.8265,0.8506,0.0172,579
+radBERT,No Finding,0.3359,0.6401,0.9,True,0.8409,1.0,0.0001,4
+radBERT,No Finding,0.3359,0.6401,0.93,True,0.8409,1.0,0.0001,4
+radBERT,No Finding,0.3359,0.6401,0.95,True,0.8409,1.0,0.0001,4
+radBERT,No Finding,0.3359,0.6401,0.97,True,0.8409,1.0,0.0001,4
+radBERT,No Finding,0.3359,0.6401,0.99,True,0.8409,1.0,0.0001,4
+radBERT,Pleural Effusion,0.2482,0.5883,0.85,True,0.8454,0.8513,0.0856,2124
+radBERT,Pleural Effusion,0.2482,0.5883,0.9,True,0.8797,0.9045,0.0286,711
+radBERT,Pleural Effusion,0.2482,0.5883,0.93,True,0.9038,0.9412,0.0028,71
+radBERT,Pleural Effusion,0.2482,0.5883,0.95,True,0.9038,1.0,0.0028,71
+radBERT,Pleural Effusion,0.2482,0.5883,0.97,True,0.9038,1.0,0.0028,71
+radBERT,Pleural Effusion,0.2482,0.5883,0.99,True,0.9038,1.0,0.0028,71
+radBERT,Pleural Other,0.0096,0.0327,0.85,True,0.1201,1.0,0.0,0
+radBERT,Pleural Other,0.0096,0.0327,0.9,True,0.1201,1.0,0.0,0
+radBERT,Pleural Other,0.0096,0.0327,0.93,True,0.1201,1.0,0.0,0
+radBERT,Pleural Other,0.0096,0.0327,0.95,True,0.1201,1.0,0.0,0
+radBERT,Pleural Other,0.0096,0.0327,0.97,True,0.1201,1.0,0.0,0
+radBERT,Pleural Other,0.0096,0.0327,0.99,True,0.1201,1.0,0.0,0
+radBERT,Pneumonia,0.0738,0.173,0.85,True,0.4963,1.0,0.0,0
+radBERT,Pneumonia,0.0738,0.173,0.9,True,0.4963,1.0,0.0,0
+radBERT,Pneumonia,0.0738,0.173,0.93,True,0.4963,1.0,0.0,0
+radBERT,Pneumonia,0.0738,0.173,0.95,True,0.4963,1.0,0.0,0
+radBERT,Pneumonia,0.0738,0.173,0.97,True,0.4963,1.0,0.0,0
+radBERT,Pneumonia,0.0738,0.173,0.99,True,0.4963,1.0,0.0,0
+radBERT,Pneumothorax,0.0409,0.4798,0.85,True,0.9074,1.0,0.0011,4
+radBERT,Pneumothorax,0.0409,0.4798,0.9,True,0.9074,1.0,0.0011,4
+radBERT,Pneumothorax,0.0409,0.4798,0.93,True,0.9074,1.0,0.0011,4
+radBERT,Pneumothorax,0.0409,0.4798,0.95,True,0.9074,1.0,0.0011,4
+radBERT,Pneumothorax,0.0409,0.4798,0.97,True,0.9074,1.0,0.0011,4
+radBERT,Pneumothorax,0.0409,0.4798,0.99,True,0.9074,1.0,0.0011,4
+bioClinBERT,Atelectasis,0.1982,0.373,0.85,True,0.7663,1.0,0.0002,4
+bioClinBERT,Atelectasis,0.1982,0.373,0.9,True,0.7663,1.0,0.0002,4
+bioClinBERT,Atelectasis,0.1982,0.373,0.93,True,0.7663,1.0,0.0002,4
+bioClinBERT,Atelectasis,0.1982,0.373,0.95,True,0.7663,1.0,0.0002,4
+bioClinBERT,Atelectasis,0.1982,0.373,0.97,True,0.7663,1.0,0.0002,4
+bioClinBERT,Atelectasis,0.1982,0.373,0.99,True,0.7663,1.0,0.0002,4
+bioClinBERT,Cardiomegaly,0.198,0.4586,0.85,True,0.9038,1.0,0.0004,9
+bioClinBERT,Cardiomegaly,0.198,0.4586,0.9,True,0.9038,1.0,0.0004,9
+bioClinBERT,Cardiomegaly,0.198,0.4586,0.93,True,0.9038,1.0,0.0004,9
+bioClinBERT,Cardiomegaly,0.198,0.4586,0.95,True,0.9038,1.0,0.0004,9
+bioClinBERT,Cardiomegaly,0.198,0.4586,0.97,True,0.9038,1.0,0.0004,9
+bioClinBERT,Cardiomegaly,0.198,0.4586,0.99,True,0.9038,1.0,0.0004,9
+bioClinBERT,Consolidation,0.0515,0.1642,0.85,True,0.5514,1.0,0.0009,4
+bioClinBERT,Consolidation,0.0515,0.1642,0.9,True,0.5514,1.0,0.0009,4
+bioClinBERT,Consolidation,0.0515,0.1642,0.93,True,0.5514,1.0,0.0009,4
+bioClinBERT,Consolidation,0.0515,0.1642,0.95,True,0.5514,1.0,0.0009,4
+bioClinBERT,Consolidation,0.0515,0.1642,0.97,True,0.5514,1.0,0.0009,4
+bioClinBERT,Consolidation,0.0515,0.1642,0.99,True,0.5514,1.0,0.0009,4
+bioClinBERT,Edema,0.1248,0.3157,0.85,True,0.7348,1.0,0.0,0
+bioClinBERT,Edema,0.1248,0.3157,0.9,True,0.7348,1.0,0.0,0
+bioClinBERT,Edema,0.1248,0.3157,0.93,True,0.7348,1.0,0.0,0
+bioClinBERT,Edema,0.1248,0.3157,0.95,True,0.7348,1.0,0.0,0
+bioClinBERT,Edema,0.1248,0.3157,0.97,True,0.7348,1.0,0.0,0
+bioClinBERT,Edema,0.1248,0.3157,0.99,True,0.7348,1.0,0.0,0
+bioClinBERT,Enlarged Cardiomediastinum,0.031,0.0999,0.85,True,0.6128,1.0,0.0,0
+bioClinBERT,Enlarged Cardiomediastinum,0.031,0.0999,0.9,True,0.6128,1.0,0.0,0
+bioClinBERT,Enlarged Cardiomediastinum,0.031,0.0999,0.93,True,0.6128,1.0,0.0,0
+bioClinBERT,Enlarged Cardiomediastinum,0.031,0.0999,0.95,True,0.6128,1.0,0.0,0
+bioClinBERT,Enlarged Cardiomediastinum,0.031,0.0999,0.97,True,0.6128,1.0,0.0,0
+bioClinBERT,Enlarged Cardiomediastinum,0.031,0.0999,0.99,True,0.6128,1.0,0.0,0
+bioClinBERT,Fracture,0.0207,0.2615,0.85,True,0.7955,1.0,0.0043,9
+bioClinBERT,Fracture,0.0207,0.2615,0.9,True,0.7955,1.0,0.0043,9
+bioClinBERT,Fracture,0.0207,0.2615,0.93,True,0.7955,1.0,0.0043,9
+bioClinBERT,Fracture,0.0207,0.2615,0.95,True,0.7955,1.0,0.0043,9
+bioClinBERT,Fracture,0.0207,0.2615,0.97,True,0.7955,1.0,0.0043,9
+bioClinBERT,Fracture,0.0207,0.2615,0.99,True,0.7955,1.0,0.0043,9
+bioClinBERT,Lung Lesion,0.0258,0.1431,0.85,True,0.6389,1.0,0.0051,13
+bioClinBERT,Lung Lesion,0.0258,0.1431,0.9,True,0.6389,1.0,0.0051,13
+bioClinBERT,Lung Lesion,0.0258,0.1431,0.93,True,0.6389,1.0,0.0051,13
+bioClinBERT,Lung Lesion,0.0258,0.1431,0.95,True,0.6389,1.0,0.0051,13
+bioClinBERT,Lung Lesion,0.0258,0.1431,0.97,True,0.6389,1.0,0.0051,13
+bioClinBERT,Lung Lesion,0.0258,0.1431,0.99,True,0.6389,1.0,0.0051,13
+bioClinBERT,Lung Opacity,0.2313,0.3955,0.85,True,0.8057,1.0,0.0004,9
+bioClinBERT,Lung Opacity,0.2313,0.3955,0.9,True,0.8057,1.0,0.0004,9
+bioClinBERT,Lung Opacity,0.2313,0.3955,0.93,True,0.8057,1.0,0.0004,9
+bioClinBERT,Lung Opacity,0.2313,0.3955,0.95,True,0.8057,1.0,0.0004,9
+bioClinBERT,Lung Opacity,0.2313,0.3955,0.97,True,0.8057,1.0,0.0004,9
+bioClinBERT,Lung Opacity,0.2313,0.3955,0.99,True,0.8057,1.0,0.0004,9
+bioClinBERT,No Finding,0.3359,0.6374,0.85,True,0.8745,0.8667,0.0017,57
+bioClinBERT,No Finding,0.3359,0.6374,0.9,True,0.8748,0.9286,0.0017,57
+bioClinBERT,No Finding,0.3359,0.6374,0.93,True,0.8756,1.0,0.0016,53
+bioClinBERT,No Finding,0.3359,0.6374,0.95,True,0.8756,1.0,0.0016,53
+bioClinBERT,No Finding,0.3359,0.6374,0.97,True,0.8756,1.0,0.0016,53
+bioClinBERT,No Finding,0.3359,0.6374,0.99,True,0.8756,1.0,0.0016,53
+bioClinBERT,Pleural Effusion,0.2482,0.585,0.85,True,0.8389,0.8515,0.0694,1722
+bioClinBERT,Pleural Effusion,0.2482,0.585,0.9,True,0.9333,1.0,0.0002,4
+bioClinBERT,Pleural Effusion,0.2482,0.585,0.93,True,0.9333,1.0,0.0002,4
+bioClinBERT,Pleural Effusion,0.2482,0.585,0.95,True,0.9333,1.0,0.0002,4
+bioClinBERT,Pleural Effusion,0.2482,0.585,0.97,True,0.9333,1.0,0.0002,4
+bioClinBERT,Pleural Effusion,0.2482,0.585,0.99,True,0.9333,1.0,0.0002,4
+bioClinBERT,Pleural Other,0.0096,0.046,0.85,True,0.2176,1.0,0.0046,4
+bioClinBERT,Pleural Other,0.0096,0.046,0.9,True,0.2176,1.0,0.0046,4
+bioClinBERT,Pleural Other,0.0096,0.046,0.93,True,0.2176,1.0,0.0046,4
+bioClinBERT,Pleural Other,0.0096,0.046,0.95,True,0.2176,1.0,0.0046,4
+bioClinBERT,Pleural Other,0.0096,0.046,0.97,True,0.2176,1.0,0.0046,4
+bioClinBERT,Pleural Other,0.0096,0.046,0.99,True,0.2176,1.0,0.0046,4
+bioClinBERT,Pneumonia,0.0738,0.1723,0.85,True,0.4926,1.0,0.0,0
+bioClinBERT,Pneumonia,0.0738,0.1723,0.9,True,0.4926,1.0,0.0,0
+bioClinBERT,Pneumonia,0.0738,0.1723,0.93,True,0.4926,1.0,0.0,0
+bioClinBERT,Pneumonia,0.0738,0.1723,0.95,True,0.4926,1.0,0.0,0
+bioClinBERT,Pneumonia,0.0738,0.1723,0.97,True,0.4926,1.0,0.0,0
+bioClinBERT,Pneumonia,0.0738,0.1723,0.99,True,0.4926,1.0,0.0,0
+bioClinBERT,Pneumothorax,0.0409,0.4792,0.85,True,0.8965,1.0,0.0011,4
+bioClinBERT,Pneumothorax,0.0409,0.4792,0.9,True,0.8965,1.0,0.0011,4
+bioClinBERT,Pneumothorax,0.0409,0.4792,0.93,True,0.8965,1.0,0.0011,4
+bioClinBERT,Pneumothorax,0.0409,0.4792,0.95,True,0.8965,1.0,0.0011,4
+bioClinBERT,Pneumothorax,0.0409,0.4792,0.97,True,0.8965,1.0,0.0011,4
+bioClinBERT,Pneumothorax,0.0409,0.4792,0.99,True,0.8965,1.0,0.0011,4
+BernoulliNB,Atelectasis,0.1982,0.3146,0.85,True,1.0,1.0,0.0,0
+BernoulliNB,Atelectasis,0.1982,0.3146,0.9,True,1.0,1.0,0.0,0
+BernoulliNB,Atelectasis,0.1982,0.3146,0.93,True,1.0,1.0,0.0,0
+BernoulliNB,Atelectasis,0.1982,0.3146,0.95,True,1.0,1.0,0.0,0
+BernoulliNB,Atelectasis,0.1982,0.3146,0.97,True,1.0,1.0,0.0,0
+BernoulliNB,Atelectasis,0.1982,0.3146,0.99,True,1.0,1.0,0.0,0
+BernoulliNB,Cardiomegaly,0.198,0.3496,0.85,True,1.0,1.0,0.0002,4
+BernoulliNB,Cardiomegaly,0.198,0.3496,0.9,True,1.0,1.0,0.0002,4
+BernoulliNB,Cardiomegaly,0.198,0.3496,0.93,True,1.0,1.0,0.0002,4
+BernoulliNB,Cardiomegaly,0.198,0.3496,0.95,True,1.0,1.0,0.0002,4
+BernoulliNB,Cardiomegaly,0.198,0.3496,0.97,True,1.0,1.0,0.0002,4
+BernoulliNB,Cardiomegaly,0.198,0.3496,0.99,True,1.0,1.0,0.0002,4
+BernoulliNB,Consolidation,0.0515,0.1103,0.85,True,1.0,1.0,0.0009,4
+BernoulliNB,Consolidation,0.0515,0.1103,0.9,True,1.0,1.0,0.0009,4
+BernoulliNB,Consolidation,0.0515,0.1103,0.93,True,1.0,1.0,0.0009,4
+BernoulliNB,Consolidation,0.0515,0.1103,0.95,True,1.0,1.0,0.0009,4
+BernoulliNB,Consolidation,0.0515,0.1103,0.97,True,1.0,1.0,0.0009,4
+BernoulliNB,Consolidation,0.0515,0.1103,0.99,True,1.0,1.0,0.0009,4
+BernoulliNB,Edema,0.1248,0.2823,0.85,True,1.0,1.0,0.0004,4
+BernoulliNB,Edema,0.1248,0.2823,0.9,True,1.0,1.0,0.0004,4
+BernoulliNB,Edema,0.1248,0.2823,0.93,True,1.0,1.0,0.0004,4
+BernoulliNB,Edema,0.1248,0.2823,0.95,True,1.0,1.0,0.0004,4
+BernoulliNB,Edema,0.1248,0.2823,0.97,True,1.0,1.0,0.0004,4
+BernoulliNB,Edema,0.1248,0.2823,0.99,True,1.0,1.0,0.0004,4
+BernoulliNB,Enlarged Cardiomediastinum,0.031,0.0559,0.85,True,0.999,1.0,0.0,0
+BernoulliNB,Enlarged Cardiomediastinum,0.031,0.0559,0.9,True,0.999,1.0,0.0,0
+BernoulliNB,Enlarged Cardiomediastinum,0.031,0.0559,0.93,True,0.999,1.0,0.0,0
+BernoulliNB,Enlarged Cardiomediastinum,0.031,0.0559,0.95,True,0.999,1.0,0.0,0
+BernoulliNB,Enlarged Cardiomediastinum,0.031,0.0559,0.97,True,0.999,1.0,0.0,0
+BernoulliNB,Enlarged Cardiomediastinum,0.031,0.0559,0.99,True,0.999,1.0,0.0,0
+BernoulliNB,Fracture,0.0207,0.2018,0.85,True,1.0,1.0,0.0,0
+BernoulliNB,Fracture,0.0207,0.2018,0.9,True,1.0,1.0,0.0,0
+BernoulliNB,Fracture,0.0207,0.2018,0.93,True,1.0,1.0,0.0,0
+BernoulliNB,Fracture,0.0207,0.2018,0.95,True,1.0,1.0,0.0,0
+BernoulliNB,Fracture,0.0207,0.2018,0.97,True,1.0,1.0,0.0,0
+BernoulliNB,Fracture,0.0207,0.2018,0.99,True,1.0,1.0,0.0,0
+BernoulliNB,Lung Lesion,0.0258,0.0975,0.85,True,1.0,1.0,0.0,0
+BernoulliNB,Lung Lesion,0.0258,0.0975,0.9,True,1.0,1.0,0.0,0
+BernoulliNB,Lung Lesion,0.0258,0.0975,0.93,True,1.0,1.0,0.0,0
+BernoulliNB,Lung Lesion,0.0258,0.0975,0.95,True,1.0,1.0,0.0,0
+BernoulliNB,Lung Lesion,0.0258,0.0975,0.97,True,1.0,1.0,0.0,0
+BernoulliNB,Lung Lesion,0.0258,0.0975,0.99,True,1.0,1.0,0.0,0
+BernoulliNB,Lung Opacity,0.2313,0.3327,0.85,True,0.9999,1.0,0.0,0
+BernoulliNB,Lung Opacity,0.2313,0.3327,0.9,True,0.9999,1.0,0.0,0
+BernoulliNB,Lung Opacity,0.2313,0.3327,0.93,True,0.9999,1.0,0.0,0
+BernoulliNB,Lung Opacity,0.2313,0.3327,0.95,True,0.9999,1.0,0.0,0
+BernoulliNB,Lung Opacity,0.2313,0.3327,0.97,True,0.9999,1.0,0.0,0
+BernoulliNB,Lung Opacity,0.2313,0.3327,0.99,True,0.9999,1.0,0.0,0
+BernoulliNB,No Finding,0.3359,0.5783,0.85,True,0.9976,0.8636,0.0025,84
+BernoulliNB,No Finding,0.3359,0.5783,0.9,True,0.9979,0.9,0.0024,79
+BernoulliNB,No Finding,0.3359,0.5783,0.93,True,0.9981,0.9474,0.0024,79
+BernoulliNB,No Finding,0.3359,0.5783,0.95,True,0.9998,1.0,0.0001,4
+BernoulliNB,No Finding,0.3359,0.5783,0.97,True,0.9998,1.0,0.0001,4
+BernoulliNB,No Finding,0.3359,0.5783,0.99,True,0.9998,1.0,0.0001,4
+BernoulliNB,Pleural Effusion,0.2482,0.5008,0.85,True,1.0,0.875,0.0012,31
+BernoulliNB,Pleural Effusion,0.2482,0.5008,0.9,True,1.0,1.0,0.0004,9
+BernoulliNB,Pleural Effusion,0.2482,0.5008,0.93,True,1.0,1.0,0.0004,9
+BernoulliNB,Pleural Effusion,0.2482,0.5008,0.95,True,1.0,1.0,0.0004,9
+BernoulliNB,Pleural Effusion,0.2482,0.5008,0.97,True,1.0,1.0,0.0004,9
+BernoulliNB,Pleural Effusion,0.2482,0.5008,0.99,True,1.0,1.0,0.0004,9
+BernoulliNB,Pleural Other,0.0096,0.0185,0.85,True,1.0,1.0,0.0,0
+BernoulliNB,Pleural Other,0.0096,0.0185,0.9,True,1.0,1.0,0.0,0
+BernoulliNB,Pleural Other,0.0096,0.0185,0.93,True,1.0,1.0,0.0,0
+BernoulliNB,Pleural Other,0.0096,0.0185,0.95,True,1.0,1.0,0.0,0
+BernoulliNB,Pleural Other,0.0096,0.0185,0.97,True,1.0,1.0,0.0,0
+BernoulliNB,Pleural Other,0.0096,0.0185,0.99,True,1.0,1.0,0.0,0
+BernoulliNB,Pneumonia,0.0738,0.1393,0.85,True,0.9993,1.0,0.0,0
+BernoulliNB,Pneumonia,0.0738,0.1393,0.9,True,0.9993,1.0,0.0,0
+BernoulliNB,Pneumonia,0.0738,0.1393,0.93,True,0.9993,1.0,0.0,0
+BernoulliNB,Pneumonia,0.0738,0.1393,0.95,True,0.9993,1.0,0.0,0
+BernoulliNB,Pneumonia,0.0738,0.1393,0.97,True,0.9993,1.0,0.0,0
+BernoulliNB,Pneumonia,0.0738,0.1393,0.99,True,0.9993,1.0,0.0,0
+BernoulliNB,Pneumothorax,0.0409,0.3071,0.85,True,1.0,1.0,0.0022,9
+BernoulliNB,Pneumothorax,0.0409,0.3071,0.9,True,1.0,1.0,0.0022,9
+BernoulliNB,Pneumothorax,0.0409,0.3071,0.93,True,1.0,1.0,0.0022,9
+BernoulliNB,Pneumothorax,0.0409,0.3071,0.95,True,1.0,1.0,0.0022,9
+BernoulliNB,Pneumothorax,0.0409,0.3071,0.97,True,1.0,1.0,0.0022,9
+BernoulliNB,Pneumothorax,0.0409,0.3071,0.99,True,1.0,1.0,0.0022,9

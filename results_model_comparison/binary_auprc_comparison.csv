@@ -1,0 +1,7 @@
+comparison,auprc_A,auprc_B,delta_A_minus_B,boot_ci_lower,boot_ci_upper,boot_p,boot_p_BH,significant_BH
+baseBERT vs radBERT,0.8809,0.8848,-0.0039,-0.0058,-0.0021,0.0,0.0,True
+baseBERT vs bioClinBERT,0.8809,0.881,-0.0001,-0.0022,0.0018,0.938,0.938,False
+baseBERT vs MultinomialNB,0.8809,0.8551,0.0258,0.0219,0.03,0.0,0.0,True
+radBERT vs bioClinBERT,0.8848,0.881,0.0038,0.002,0.0057,0.0,0.0,True
+radBERT vs MultinomialNB,0.8848,0.8551,0.0297,0.0258,0.0339,0.0,0.0,True
+bioClinBERT vs MultinomialNB,0.881,0.8551,0.0259,0.022,0.0299,0.0,0.0,True

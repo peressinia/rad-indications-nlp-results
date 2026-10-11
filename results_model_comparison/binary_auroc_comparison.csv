@@ -1,0 +1,7 @@
+comparison,auroc_A,auroc_B,delta_A_minus_B,delong_se,delong_z,delong_p,boot_ci_lower,boot_ci_upper,boot_p,delong_p_BH,significant_BH
+baseBERT vs radBERT,0.7934,0.798,-0.0046,0.00106,-4.3125,1.614e-05,-0.0067,-0.0025,0.0,1.937e-05,True
+baseBERT vs bioClinBERT,0.7934,0.7934,0.0,0.00107,0.0001,1.0,-0.0022,0.0022,0.983,1.0,False
+baseBERT vs MultinomialNB,0.7934,0.7633,0.0301,0.00198,15.1818,4.671e-52,0.0262,0.0341,0.0,9.343e-52,True
+radBERT vs bioClinBERT,0.798,0.7934,0.0046,0.00105,4.3745,1.217e-05,0.0027,0.0068,0.0,1.825e-05,True
+radBERT vs MultinomialNB,0.798,0.7633,0.0347,0.00193,18.0208,1.338e-72,0.031,0.0387,0.0,8.027e-72,True
+bioClinBERT vs MultinomialNB,0.7934,0.7633,0.0301,0.00193,15.5784,1.021e-54,0.0265,0.034,0.0,3.062e-54,True

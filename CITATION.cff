@@ -1,0 +1,25 @@
+# CITATION.cff — rad-indications-nlp-results
+# Version: 1.0 [07 Oct 26] initial file. Fill in the TODO fields after the
+# JIIM volume/DOI and the Zenodo DOI are issued.
+cff-version: 1.2.0
+message: "If you use this data or code, please cite the paper below."
+title: "Radiology Indication Field NLP — Supporting Data and Code"
+type: software
+authors:
+  - family-names: Peressini
+    given-names: Anthony F.
+    affiliation: "Marquette University"
+license: MIT
+repository-code: "https://github.com/peressinia/rad-indications-nlp-results"
+# doi: "10.5281/zenodo.TODO"   # Zenodo DOI, add after first release
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Peressini
+      given-names: Anthony F.
+  title: "Predicting Findings from Radiology Indication Text: BERT vs Naïve Bayes Classification"
+  journal: "Journal of Imaging Informatics in Medicine"
+  year: 2026
+  # volume: TODO
+  # start: TODO
+  # doi: "TODO"

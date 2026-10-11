@@ -1,0 +1,144 @@
+
+════════════════════════════════════════════════════════════
+  LOADING — Binary Task
+════════════════════════════════════════════════════════════
+
+  [binary] Loading baseBERT:
+    Loaded  CNF-v4-0-baseBERT_bt32-ep3-lr0-bl1-tt0_pyV-1-2_y_true_binary.npy  shape=(22644,)  dtype=int64
+    Loaded  CNF-v4-0-baseBERT_bt32-ep3-lr0-bl1-tt0_pyV-1-2_binary_probs.npy  shape=(22644,)  dtype=float32
+
+  [binary] Loading radBERT:
+    Loaded  CNF-v4-0-radBERT_bt32-ep2-lr0-bl1-tt0_pyV-1-2_y_true_binary.npy  shape=(22644,)  dtype=int64
+    Loaded  CNF-v4-0-radBERT_bt32-ep2-lr0-bl1-tt0_pyV-1-2_binary_probs.npy  shape=(22644,)  dtype=float32
+
+  [binary] Loading bioClinBERT:
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep1-lr0-bl3-tt0_pyV-1-2_y_true_binary.npy  shape=(22644,)  dtype=int64
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep1-lr0-bl3-tt0_pyV-1-2_binary_probs.npy  shape=(22644,)  dtype=float32
+
+  [binary] Loading MultinomialNB:
+    Loaded  MultinomialNB-final-1500-NCF-v4-0-bal1_pyV-1-1_y_true_binary.npy  shape=(22644,)  dtype=int64
+    Loaded  MultinomialNB-final-1500-NCF-v4-0-bal1_pyV-1-1_nb_binary_probs.npy  shape=(22644, 2)  dtype=float64
+    -> y_prob shape (n,2): taking column 1 (positive class)
+
+  ✓ [binary] All y_true arrays are IDENTICAL — paired tests are valid.
+  shape = (22644,)  positives = 15,039
+
+════════════════════════════════════════════════════════════
+  BINARY BOOTSTRAP — 2,000 paired resamples
+════════════════════════════════════════════════════════════
+  Done.
+
+════════════════════════════════════════════════════════════
+  BINARY — PAIRWISE AUROC COMPARISON
+════════════════════════════════════════════════════════════
+    baseBERT vs radBERT:  AUROC 0.7934 vs 0.7980  diff=-0.0046  DeLong z=-4.312 p=1.614e-05  boot 95% CI [-0.0067, -0.0025]  boot p=0.0000
+    baseBERT vs bioClinBERT:  AUROC 0.7934 vs 0.7934  diff=+0.0000  DeLong z=0.000 p=1  boot 95% CI [-0.0022, +0.0022]  boot p=0.9830
+    baseBERT vs MultinomialNB:  AUROC 0.7934 vs 0.7633  diff=+0.0301  DeLong z=15.182 p=4.671e-52  boot 95% CI [+0.0262, +0.0341]  boot p=0.0000
+    radBERT vs bioClinBERT:  AUROC 0.7980 vs 0.7934  diff=+0.0046  DeLong z=4.375 p=1.217e-05  boot 95% CI [+0.0027, +0.0068]  boot p=0.0000
+    radBERT vs MultinomialNB:  AUROC 0.7980 vs 0.7633  diff=+0.0347  DeLong z=18.021 p=1.338e-72  boot 95% CI [+0.0310, +0.0387]  boot p=0.0000
+    bioClinBERT vs MultinomialNB:  AUROC 0.7934 vs 0.7633  diff=+0.0301  DeLong z=15.578 p=1.021e-54  boot 95% CI [+0.0265, +0.0340]  boot p=0.0000
+
+════════════════════════════════════════════════════════════
+  SUMMARY — Binary AUROC, DeLong (BH-corrected)
+════════════════════════════════════════════════════════════
+                  comparison  delta_A_minus_B     delong_p  delong_p_BH  significant_BH  boot_ci_lower  boot_ci_upper
+         baseBERT vs radBERT          -0.0046 1.614000e-05 1.937000e-05            True        -0.0067        -0.0025
+     baseBERT vs bioClinBERT           0.0000 1.000000e+00 1.000000e+00           False        -0.0022         0.0022
+   baseBERT vs MultinomialNB           0.0301 4.671000e-52 9.343000e-52            True         0.0262         0.0341
+      radBERT vs bioClinBERT           0.0046 1.217000e-05 1.825000e-05            True         0.0027         0.0068
+    radBERT vs MultinomialNB           0.0347 1.338000e-72 8.027000e-72            True         0.0310         0.0387
+bioClinBERT vs MultinomialNB           0.0301 1.021000e-54 3.062000e-54            True         0.0265         0.0340
+
+  Saved: ./results_model_comparison/binary_auroc_comparison.csv
+
+════════════════════════════════════════════════════════════
+  BINARY — PAIRWISE AUPRC COMPARISON (paired bootstrap)
+════════════════════════════════════════════════════════════
+    baseBERT vs radBERT:  AUPRC 0.8809 vs 0.8848  diff=-0.0039  boot 95% CI [-0.0058, -0.0021]  boot p=0.0000
+    baseBERT vs bioClinBERT:  AUPRC 0.8809 vs 0.8810  diff=-0.0001  boot 95% CI [-0.0022, +0.0018]  boot p=0.9380
+    baseBERT vs MultinomialNB:  AUPRC 0.8809 vs 0.8551  diff=+0.0258  boot 95% CI [+0.0219, +0.0300]  boot p=0.0000
+    radBERT vs bioClinBERT:  AUPRC 0.8848 vs 0.8810  diff=+0.0038  boot 95% CI [+0.0020, +0.0057]  boot p=0.0000
+    radBERT vs MultinomialNB:  AUPRC 0.8848 vs 0.8551  diff=+0.0297  boot 95% CI [+0.0258, +0.0339]  boot p=0.0000
+    bioClinBERT vs MultinomialNB:  AUPRC 0.8810 vs 0.8551  diff=+0.0259  boot 95% CI [+0.0220, +0.0299]  boot p=0.0000
+
+════════════════════════════════════════════════════════════
+  SUMMARY — Binary AUPRC, paired bootstrap (BH-corrected)
+════════════════════════════════════════════════════════════
+                  comparison  delta_A_minus_B  boot_p  boot_p_BH  significant_BH  boot_ci_lower  boot_ci_upper
+         baseBERT vs radBERT          -0.0039   0.000      0.000            True        -0.0058        -0.0021
+     baseBERT vs bioClinBERT          -0.0001   0.938      0.938           False        -0.0022         0.0018
+   baseBERT vs MultinomialNB           0.0258   0.000      0.000            True         0.0219         0.0300
+      radBERT vs bioClinBERT           0.0038   0.000      0.000            True         0.0020         0.0057
+    radBERT vs MultinomialNB           0.0297   0.000      0.000            True         0.0258         0.0339
+bioClinBERT vs MultinomialNB           0.0259   0.000      0.000            True         0.0220         0.0299
+
+  Note: bootstrap p = 0 means no resample crossed zero (p < 1/2,000).
+  Saved: ./results_model_comparison/binary_auprc_comparison.csv
+
+════════════════════════════════════════════════════════════
+  LOADING — Multi-label Task
+════════════════════════════════════════════════════════════
+
+  [multilabel] Loading baseBERT:
+    Loaded  CNF-v4-0-baseBERT_bt32-ep6-lr0-bl0-tt0_pyV-1-1_y_true_multilabel.npy  shape=(22644, 13)  dtype=int64
+    Loaded  CNF-v4-0-baseBERT_bt32-ep6-lr0-bl0-tt0_pyV-1-1_multilabel_probs.npy  shape=(22644, 13)  dtype=float32
+
+  [multilabel] Loading radBERT:
+    Loaded  CNF-v4-0-radBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_y_true_multilabel.npy  shape=(22644, 13)  dtype=int64
+    Loaded  CNF-v4-0-radBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_multilabel_probs.npy  shape=(22644, 13)  dtype=float32
+
+  [multilabel] Loading bioClinBERT:
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_y_true_multilabel.npy  shape=(22644, 13)  dtype=int64
+    Loaded  CNF-v4-0-bioClinBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1_multilabel_probs.npy  shape=(22644, 13)  dtype=float32
+
+  [multilabel] Loading BernoulliNB:
+    Loaded  BernoulliNB-TFIDF-xSplits-1500-NCF-v4-0-bal0_y_true_multilabel.npy  shape=(22644, 13)  dtype=int64
+    Loaded  BernoulliNB-TFIDF-xSplits-1500-NCF-v4-0-bal0_nb_multilabel_probs.npy  shape=(13, 22644)  dtype=float64
+    -> y_prob shape (13, 22644) is TRANSPOSED — fixing with .T
+
+  ✓ [multilabel] All y_true arrays are IDENTICAL — paired tests are valid.
+  shape = (22644, 13)  positives = 36,000
+
+════════════════════════════════════════════════════════════
+  MULTI-LABEL PERMUTATION TESTS — 5,000 permutations x 6 pairs
+════════════════════════════════════════════════════════════
+  Running pairs in parallel (6 processes)...
+    done: baseBERT vs radBERT  (38.7 min)
+    done: baseBERT vs bioClinBERT  (38.7 min)
+    done: baseBERT vs BernoulliNB  (38.7 min)
+    done: radBERT vs bioClinBERT  (38.7 min)
+    done: radBERT vs BernoulliNB  (38.7 min)
+    done: bioClinBERT vs BernoulliNB  (38.7 min)
+
+════════════════════════════════════════════════════════════
+  SUMMARY — Multi-label AUROC/AUPRC, permutation (BH-corrected)
+════════════════════════════════════════════════════════════
+                comparison        metric  value_A  value_B  delta_A_minus_B  p_value  p_value_BH  significant_BH
+       baseBERT vs radBERT micro_roc_auc   0.8535   0.8547          -0.0012   0.0034      0.0051            True
+       baseBERT vs radBERT macro_roc_auc   0.7631   0.7637          -0.0006   0.6865      0.6865           False
+       baseBERT vs radBERT   micro_auprc   0.4701   0.4740          -0.0039   0.0010      0.0016            True
+       baseBERT vs radBERT   macro_auprc   0.3143   0.3162          -0.0020   0.1916      0.2189           False
+   baseBERT vs bioClinBERT micro_roc_auc   0.8535   0.8557          -0.0022   0.0002      0.0003            True
+   baseBERT vs bioClinBERT macro_roc_auc   0.7631   0.7655          -0.0023   0.0470      0.0594           False
+   baseBERT vs bioClinBERT   micro_auprc   0.4701   0.4748          -0.0046   0.0002      0.0003            True
+   baseBERT vs bioClinBERT   macro_auprc   0.3143   0.3178          -0.0035   0.0116      0.0155            True
+   baseBERT vs BernoulliNB micro_roc_auc   0.8535   0.8137           0.0398   0.0002      0.0003            True
+   baseBERT vs BernoulliNB macro_roc_auc   0.7631   0.7214           0.0418   0.0002      0.0003            True
+   baseBERT vs BernoulliNB   micro_auprc   0.4701   0.3582           0.1119   0.0002      0.0003            True
+   baseBERT vs BernoulliNB   macro_auprc   0.3143   0.2530           0.0613   0.0002      0.0003            True
+    radBERT vs bioClinBERT micro_roc_auc   0.8547   0.8557          -0.0010   0.0084      0.0119            True
+    radBERT vs bioClinBERT macro_roc_auc   0.7637   0.7655          -0.0017   0.1692      0.2030           False
+    radBERT vs bioClinBERT   micro_auprc   0.4740   0.4748          -0.0008   0.4855      0.5066           False
+    radBERT vs bioClinBERT   macro_auprc   0.3162   0.3178          -0.0015   0.3425      0.3737           False
+    radBERT vs BernoulliNB micro_roc_auc   0.8547   0.8137           0.0410   0.0002      0.0003            True
+    radBERT vs BernoulliNB macro_roc_auc   0.7637   0.7214           0.0423   0.0002      0.0003            True
+    radBERT vs BernoulliNB   micro_auprc   0.4740   0.3582           0.1158   0.0002      0.0003            True
+    radBERT vs BernoulliNB   macro_auprc   0.3162   0.2530           0.0633   0.0002      0.0003            True
+bioClinBERT vs BernoulliNB micro_roc_auc   0.8557   0.8137           0.0420   0.0002      0.0003            True
+bioClinBERT vs BernoulliNB macro_roc_auc   0.7655   0.7214           0.0441   0.0002      0.0003            True
+bioClinBERT vs BernoulliNB   micro_auprc   0.4748   0.3582           0.1165   0.0002      0.0003            True
+bioClinBERT vs BernoulliNB   macro_auprc   0.3178   0.2530           0.0648   0.0002      0.0003            True
+
+  Note: smallest attainable p = 1/5,001 = 0.0002.
+  Saved: ./results_model_comparison/multilabel_auc_permutation_results.csv
+

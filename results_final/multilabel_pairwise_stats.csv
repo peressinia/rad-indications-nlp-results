@@ -1,0 +1,7 @@
+Model_A,Model_B,Delta_Micro-F1,p_value
+CNF-v4-0-radBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1,CNF-v4-0-bioClinBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1,0.021495581220092486,0.0
+CNF-v4-0-radBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1,CNF-v4-0-baseBERT_bt32-ep6-lr0-bl0-tt0_pyV-1-1,0.027343891188660818,0.0
+CNF-v4-0-radBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1,BernoulliNB-TFIDF-xSplits-1500-NCF-v4-0-bal0_nb,-0.010313556267566915,0.0
+CNF-v4-0-bioClinBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1,CNF-v4-0-baseBERT_bt32-ep6-lr0-bl0-tt0_pyV-1-1,0.005848309968568333,0.0004
+CNF-v4-0-bioClinBERT_bt32-ep5-lr0-bl0-tt0_pyV-1-1,BernoulliNB-TFIDF-xSplits-1500-NCF-v4-0-bal0_nb,-0.0318091374876594,0.0
+CNF-v4-0-baseBERT_bt32-ep6-lr0-bl0-tt0_pyV-1-1,BernoulliNB-TFIDF-xSplits-1500-NCF-v4-0-bal0_nb,-0.03765744745622773,0.0

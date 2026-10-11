@@ -1,0 +1,41 @@
+Loading reason file: ./get-reasons/mimic-reasons-CNF-v4-0.csv
+Total reasons loaded: 219,995
+Loading CheXpert labels: ./get-reasons/mimic-cxr-2.0.0-chexpert.csv
+Loading test-set labels: ./data_csv/multilabel_baseBERT_y_true.csv
+
+Dataset sizes:
+  Full dataset:  219,995
+  Training set:  197,351
+  Test set:      22,644
+
+======================================================================
+LABEL PREVALENCE REPORT
+======================================================================
+
+Label                          Full n   Full%   Train n   Train%   Test n   Test%
+----------------------------------------------------------------------
+  Atelectasis                  44,223    20.1%    39,734     20.1%    4,489    19.8%
+  Cardiomegaly                 43,937    20.0%    39,453     20.0%    4,484    19.8%
+  Consolidation                10,557     4.8%     9,390      4.8%    1,167     5.2%
+  Edema                        26,127    11.9%    23,301     11.8%    2,826    12.5%
+  Enlarged Cardiomediastinum    6,900     3.1%     6,198      3.1%      702     3.1%
+  Fracture                      4,291     2.0%     3,823      1.9%      468     2.1%
+  Lung Lesion                   6,041     2.7%     5,456      2.8%      585     2.6%
+  Lung Opacity                 49,589    22.5%    44,351     22.5%    5,238    23.1%
+  No Finding                   74,471    33.9%    66,866     33.9%    7,605    33.6%
+  Pleural Effusion             52,153    23.7%    46,532     23.6%    5,621    24.8%
+  Pleural Other                 1,942     0.9%     1,725      0.9%      217     1.0%
+  Pneumonia                    15,819     7.2%    14,147      7.2%    1,672     7.4%
+  Pneumothorax                  9,893     4.5%     8,967      4.5%      926     4.1%
+
+  Total records:  Full=219,995  Train=197,351  Test=22,644
+  Avg labels/record (full): 1.57
+  Multi-label co-occurrence (full): 80,407 records (36.5%) have >1 label
+
+  Full vs Test prevalence difference (max): 1.1pp
+  Full vs Test prevalence difference (mean): 0.34pp
+
+  CSV saved: ./results_label_report/label_prevalence_report-v4-0.csv
+  Plot saved: ./results_label_report/label_prevalence_report-v4-0.png
+
+Done.

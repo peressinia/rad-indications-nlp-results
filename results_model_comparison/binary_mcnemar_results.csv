@@ -1,0 +1,7 @@
+comparison,b_Acorr_Bwrong,c_Awrong_Bcorr,statistic,p_value,method,significant_p05,p_value_BH,significant_BH
+baseBERT vs radBERT,842,735,7.1249,0.0076,chi-sq+continuity,True,0.0091,True
+baseBERT vs bioClinBERT,866,680,22.1378,0.0,chi-sq+continuity,True,0.0,True
+baseBERT vs MultinomialNB,1852,1184,146.5379,0.0,chi-sq+continuity,True,0.0,True
+radBERT vs bioClinBERT,796,717,4.0212,0.0449,chi-sq+continuity,True,0.0449,True
+radBERT vs MultinomialNB,1749,1188,106.7756,0.0,chi-sq+continuity,True,0.0,True
+bioClinBERT vs MultinomialNB,1702,1220,79.179,0.0,chi-sq+continuity,True,0.0,True

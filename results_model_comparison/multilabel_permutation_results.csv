@@ -1,0 +1,25 @@
+comparison,metric,delta_A_minus_B,p_value,significant_p05,p_value_BH,significant_BH
+baseBERT vs radBERT,micro_f1,-0.0273,0.0,True,0.0,True
+baseBERT vs radBERT,macro_f1,-0.0213,0.0,True,0.0,True
+baseBERT vs radBERT,weighted_f1,-0.0239,0.0,True,0.0,True
+baseBERT vs radBERT,hamming_loss,0.0011,0.0002,True,0.0002,True
+baseBERT vs bioClinBERT,micro_f1,-0.0058,0.0006,True,0.0007,True
+baseBERT vs bioClinBERT,macro_f1,0.0086,0.0,True,0.0,True
+baseBERT vs bioClinBERT,weighted_f1,0.0012,0.485,False,0.485,False
+baseBERT vs bioClinBERT,hamming_loss,-0.0004,0.1104,False,0.1152,False
+baseBERT vs BernoulliNB,micro_f1,-0.0377,0.0,True,0.0,True
+baseBERT vs BernoulliNB,macro_f1,-0.0665,0.0,True,0.0,True
+baseBERT vs BernoulliNB,weighted_f1,-0.065,0.0,True,0.0,True
+baseBERT vs BernoulliNB,hamming_loss,0.0338,0.0,True,0.0,True
+radBERT vs bioClinBERT,micro_f1,0.0215,0.0,True,0.0,True
+radBERT vs bioClinBERT,macro_f1,0.0299,0.0,True,0.0,True
+radBERT vs bioClinBERT,weighted_f1,0.025,0.0,True,0.0,True
+radBERT vs bioClinBERT,hamming_loss,-0.0015,0.0,True,0.0,True
+radBERT vs BernoulliNB,micro_f1,-0.0103,0.0002,True,0.0002,True
+radBERT vs BernoulliNB,macro_f1,-0.0452,0.0,True,0.0,True
+radBERT vs BernoulliNB,weighted_f1,-0.0412,0.0,True,0.0,True
+radBERT vs BernoulliNB,hamming_loss,0.0328,0.0,True,0.0,True
+bioClinBERT vs BernoulliNB,micro_f1,-0.0318,0.0,True,0.0,True
+bioClinBERT vs BernoulliNB,macro_f1,-0.0751,0.0,True,0.0,True
+bioClinBERT vs BernoulliNB,weighted_f1,-0.0662,0.0,True,0.0,True
+bioClinBERT vs BernoulliNB,hamming_loss,0.0343,0.0,True,0.0,True

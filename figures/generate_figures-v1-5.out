@@ -1,0 +1,60 @@
+Figure generation script
+  Data dir      : ./results_model_comparison
+  Threshold dir : ./results_threshold
+  Preds dir     : ./data_numpy
+  Figures dir   : ./figures
+  DPI        : 300
+
+Generating fig11-perlabel-f1 ...
+  Saved: ./figures/fig11-perlabel-f1.pdf
+  Saved: ./figures/fig11-perlabel-f1.jpg
+
+Generating fig12-pr-curves ...
+  Saved: ./figures/fig12-pr-curves.pdf
+  Saved: ./figures/fig12-pr-curves.jpg
+
+Generating fig13-calibration ...
+
+  === Brier Scores (Binary) ===
+    baseBERT         Brier=0.1846  ECE=0.1013
+    radBERT          Brier=0.1850  ECE=0.1118
+    bioClinBERT      Brier=0.1860  ECE=0.1092
+    MultinomialNB    Brier=0.1988  ECE=0.1231
+
+  === Brier Scores (Multi-label, mean across 13 labels) ===
+    baseBERT         Brier=0.0829  ECE=0.0119
+    radBERT          Brier=0.0829  ECE=0.0159
+    bioClinBERT      Brier=0.0825  ECE=0.0107
+    BernoulliNB      Brier=0.1100  ECE=0.0769
+
+  Saved: ./figures/fig13-calibration.pdf
+
+  Saved: ./figures/fig13-calibration.jpg
+
+Generating fig14-label-freq ...
+  Saved: ./figures/fig14-label-freq.pdf
+  Saved: ./figures/fig14-label-freq.jpg
+Test set label prevalences:
+    Pleural Other                full=0.9%  test=1.0%
+    Fracture                     full=2.0%  test=2.1%
+    Lung Lesion                  full=2.7%  test=2.6%
+    Enlarged CM                  full=3.1%  test=3.1%
+    Pneumothorax                 full=4.5%  test=4.1%
+    Consolidation                full=4.8%  test=5.2%
+    Pneumonia                    full=7.2%  test=7.4%
+    Edema                        full=11.9%  test=12.5%
+    Cardiomegaly                 full=20.0%  test=19.8%
+    Atelectasis                  full=20.1%  test=19.8%
+    Lung Opacity                 full=22.5%  test=23.1%
+    Pleural Effusion             full=23.7%  test=24.8%
+    No Finding                   full=33.9%  test=33.6%
+
+Done. Files written:
+  fig11-perlabel-f1.jpg                  241,052 bytes
+  fig11-perlabel-f1.pdf                   24,399 bytes
+  fig12-pr-curves.jpg                    158,746 bytes
+  fig12-pr-curves.pdf                    118,550 bytes
+  fig13-calibration.jpg                  171,384 bytes
+  fig13-calibration.pdf                   24,040 bytes
+  fig14-label-freq.jpg                   151,977 bytes
+  fig14-label-freq.pdf                    25,029 bytes
