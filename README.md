@@ -529,7 +529,9 @@ Anthony F. Peressini — Marquette University
 ## Archive
  
 A permanent, citable snapshot of this repository is archived on Zenodo:
-[DOI: to be added after the first release].
+[https://doi.org/10.5281/zenodo.23322569](https://doi.org/10.5281/zenodo.23322569).
+This DOI always resolves to the newest version; v1.0.0 is
+[10.5281/zenodo.23322570](https://doi.org/10.5281/zenodo.23322570).
  
 ---
  
