@@ -1,6 +1,7 @@
 # CITATION.cff — rad-indications-nlp-results
 # Version: 1.0 [07 Oct 26] initial file. Fill in the TODO fields after the
 # JIIM volume/DOI and the Zenodo DOI are issued.
+# Version: 1.1 [12 Oct 26] added the article DOI and release version.
 cff-version: 1.2.0
 message: "If you use this data or code, please cite the paper below."
 title: "Radiology Indication Field NLP — Supporting Data and Code"
@@ -11,6 +12,7 @@ authors:
     affiliation: "Marquette University"
 license: MIT
 repository-code: "https://github.com/peressinia/rad-indications-nlp-results"
+version: "1.0.0"
 # doi: "10.5281/zenodo.TODO"   # Zenodo DOI, add after first release
 preferred-citation:
   type: article
@@ -22,4 +24,4 @@ preferred-citation:
   year: 2026
   # volume: TODO
   # start: TODO
-  # doi: "TODO"
+  doi: "10.1007/s10278-026-02404-1"

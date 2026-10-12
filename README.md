@@ -4,7 +4,8 @@ Supporting data and analysis code for:
 
 > Peressini, A.F. (2026). *Predicting Findings from Radiology Indication Text:
 > BERT vs Naïve Bayes Classification.*
-> Journal of Imaging Informatics in Medicine (JIIM). [accepted; volume, pages, and DOI to be added]
+> Journal of Imaging Informatics in Medicine (JIIM).
+> https://doi.org/10.1007/s10278-026-02404-1 [in press; volume and pages to be added]
 
 
 
@@ -501,9 +502,10 @@ If you use this data or code, please cite:
   author  = {Peressini, Anthony F.},
   title   = {Predicting Findings from Radiology {Indication} Text: {BERT} vs
              Na{\"i}ve Bayes Classification},
-  journal = {JIIM},
+  journal = {Journal of Imaging Informatics in Medicine},
   year    = {2026},
-  note    = {accepted}
+  doi     = {10.1007/s10278-026-02404-1},
+  note    = {in press}
 }
 ```
 
